@@ -1,0 +1,35 @@
+<section class="promotion">
+	<div class="promotion__inner">
+		<div class="promotion__inner-box">
+			{% include "@blocks/g-slider/g-slider.twig" %}
+			<div class="promotion__bookofday--mobile">
+				{% include "@blocks/bookofday/bookofday.twig" %}
+			</div>
+			<div class="promotion__offers">
+				<a href="#" class="promotion__offers-box promotion__offers-box--delivery">
+					<div class="promotion__card">
+						<p class="promotion__card-text promotion__offers-delivery__text">
+							<span  class="promotion__offers-delivery__text--delivery">Бесплатно</span>
+							доставим ваш заказ при покупке от 2000 ₽</p>
+
+						{% include "@assets/svg/promotion-delivery.svg" %}
+					</div>
+				</a>
+				<a href="#" class="promotion__offers-box promotion__offers-box--discount">
+					<div class="promotion__card">
+						<p class="promotion__card-text promotion__offers-discount__text">Скидка
+							<br>
+							при регистрации до
+							<span class="promotion__offers-discount__text--discount">15%</span>
+						</p>
+						{% include "@assets/svg/promotion-discount.svg" %}
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="promotion__bookofday">
+			{% include "@blocks/bookofday/bookofday.twig" %}
+		</div>
+
+	</div>
+</section>

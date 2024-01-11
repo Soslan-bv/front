@@ -1,0 +1,54 @@
+/* mixins */
+@import 'base/mixins.scss';
+
+/* base */
+@import 'base/fonts';
+@import 'base/variables';
+@import 'base/normalize';
+@import 'base/typography';
+@import 'base/default';
+
+/* blocks */
+@import '@b/g-select/g-select.scss';
+@import '@b/g-input/g-input.scss';
+@import '@b/g-checkbox/g-checkbox.scss';
+@import '@b/g-button/g-button.scss';
+@import '@b/g-radio/g-radio.scss';
+@import '@b/header/header.scss';
+@import '@b/promotion/promotion.scss';
+@import '@b/bookofday/bookofday.scss';
+@import '@b/g-slider/g-slider.scss';
+@import '@b/bestseller/bestseller.scss';
+@import '@b/one-plus/one-plus.scss';
+@import '@b/novelty/novelty.scss';
+@import '@b/books-section/books-section.scss';
+@import '@b/subscription/subscription.scss';
+@import '@b/advantages/advantages.scss';
+@import '@b/news/news.scss';
+@import '@b/footer/footer.scss'; 
+/* @import 'blocks/component/component'; */
+
+/* pages */
+
+/* @import 'index'; */
+
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	outline: 0;
+	&:before,
+	&:after {
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+}
+html
+{
+	line-height: $mainLineHeight;
+	font-size: $mainFontSize;
+	color: $mainFontColor;
+	-webkit-font-smoothing: antialiased;
+}

@@ -1,0 +1,109 @@
+<header class="header">
+	<div class="header__top">
+		<div class="container">
+			<nav class="header__top-nav">
+				<ul class="header__list">
+					<li class="header__item">
+						{% include "@assets/svg/city.svg" %}
+						<a href="#" class="header__link">
+							Москва
+						</a>
+					</li>
+					<li class="header__item">
+						{% include "@assets/svg/shipping.svg" %}
+						<a href="#" class="header__link">
+							Доставка и оплата
+						</a>
+					</li>
+					<li class="header__item">
+						{% include "@assets/svg/address.svg" %}
+						<a href="#" class="header__link">
+							Адрес и часы работы
+						</a>
+					</li>
+				</ul>
+				<ul class="header__list">
+					<li class="header__item">
+						{% include "@assets/svg/email.svg" %}
+						<a href="email:market@estatut.ru" class="header__link">market@estatut.ru</a>
+					</li>
+					<li class="header__item">
+						{% include "@assets/svg/phone.svg" %}
+						<a href="tel:89686606550" class="header__link header__link--phone">8 (968) 660-65-50</a>
+						{% include "@assets/svg/help-phone.svg" %}
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+	<div class="header__bottom">
+		<div class="container">
+			<div class="header__bottom-wrapper">
+				<div class="header__content">
+					<div class="header__content-box">
+						<a href="index.html" class="logo">
+							{% include "@assets/svg/logo.svg" %}
+						</a>
+						<div class="header__content-search">
+							<input type="text" class="header__content-input" placeholder='Автор, название, ISBN'>
+							<button class="header__content-btn">
+								{% include "@assets/svg/search.svg" %}
+								Искать
+							</button>
+						</div>
+						<div class="header__content-search--mobile">
+							<input type="text" class="header__content-input--mobile" placeholder='Что будем искать?'>
+							<button class="header__content-btn--mobile">
+								{% include "@assets/svg/search.svg" %}
+								Искать
+							</button>
+						</div>
+					</div>
+					<div class="header__content-box">
+						<ul class="header__content-list">
+							<li class="header__content-item header__content-item--favorites">
+								{% include "@assets/svg/favorites.svg" %}
+								<a href="#" class="header__content-link header__content-link--favorites">Отложено
+								</a>
+							</li>
+							<li class="header__content-item header__content-item--signin ">
+								{% include "@assets/svg/signin.svg" %}
+								<a href="#" class="header__content-link header__content-link--signin">Войти</a>
+							</li>
+							<li class="header__content-item header__content-item--shopping">
+								{% include "@assets/svg/shopping.svg" %}
+								<a href="#" class="header__content-link header__content-link--shopping">Корзина</a>
+							</li>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="header__catalog">
+				<a href="#" class="header__catalog-burger">{% include "@assets/svg/burger.svg" %}</a>
+				<nav class="header__catalog-nav">
+					<ul class="header__catalog-list">
+						<li class="header__catalog-item">
+							<a href="#" class="header__catalog-link">Каталог</a>
+						</li>
+						<li class="header__catalog-item">
+							<a href="#" class="header__catalog-link">Авторы</a>
+						</li>
+						<li class="header__catalog-item">
+							<a href="#" class="header__catalog-link">Новинки</a>
+						</li>
+						<li class="header__catalog-item header__catalog-item--discount">
+							{% include "@assets/svg/red-discount.svg" %}
+							<a href="#" class="header__catalog-link header__catalog-link--discount">Скидки</a>
+						</li>
+						<li class="header__catalog-item">
+							<a href="#" class="header__catalog-link">Партнёрам</a>
+						</li>
+						<li class="header__catalog-item">
+							<a href="#" class="header__catalog-link">Мы</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+</div></header>

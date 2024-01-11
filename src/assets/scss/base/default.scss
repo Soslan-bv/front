@@ -1,0 +1,12 @@
+.container
+{
+	max-width: $widescreen;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+	padding: 0 10px;
+	@include mq(768px)
+	{
+		padding: 0 10px;
+	}
+}

@@ -1,0 +1,102 @@
+@media (min-width: 375px) {
+    .g-slider 
+    {
+        display: flex;
+        justify-content: center;
+    }
+    .g-slider__wrapper 
+{
+        box-sizing: content-box;
+        width: 355px;
+        height: 175px;
+        overflow: hidden;
+        position: relative;
+    }
+    .g-slider__field 
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 400%;
+        height: 100%;
+        transition: all 0.5s;
+    }
+    .slide 
+    {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        svg 
+        {
+            width: 83px;
+            height: 54px;
+        }
+    }
+    .slide--1 {background-color: #ccff90;}
+    .slide--2 {background-color: #ff5c00;}
+    .slide--3 {background-color: #6d378f;}
+    .slide--4 {background-color: #ffd8ef;}
+    .g-slider__btns 
+    {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        position: absolute;
+        left: 50%;
+        bottom: 10px;
+        transform: translateX(-50%);
+    }
+    .g-slider__btns-item 
+    {
+        background-color: #fff;
+        opacity: 0.5;
+        width: 25px;
+        height: 2px;
+        cursor: pointer;
+    }
+    .g-slider__btns-item.active {opacity: 1;}
+    .g-slider-prev,
+    .g-slider-next 
+    {
+        border: none;
+        border-radius: 7px;
+        background-color: rgba(255, 255, 255, 0.85);
+        padding: 15px;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        z-index: 15;
+    }
+    .g-slider-prev {left: 28px;}
+    .g-slider-next {right: 30px;}
+
+    .g-slider-prev,
+    .g-slider-next {fill-opacity: 0.5;}
+    .g-slider-prev.active,
+    .g-slider-next.active {fill-opacity: 1;}
+}
+@media (min-width:1160px) 
+{
+    .g-slider__wrapper 
+    {
+        width: 750px;
+        height: 350px;
+        margin-bottom: 0;
+    }
+    .slide svg
+    {
+        width: 166px;
+        height: 109px;
+    }
+    .g-slider-prev,
+    .g-slider-next {display: flex;}
+    .g-slider__btns {bottom: 20px;}
+}

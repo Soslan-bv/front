@@ -1,0 +1,293 @@
+@media (min-width:375px) 
+{
+    .footer-discount {background: rgba(28, 41, 77, 0.05);}
+
+    .footer-discount__messangers 
+    {
+        display: none;
+        align-items: center;
+        gap: 15px;
+
+        &--mobile 
+        {
+            display: flex;
+            padding: 20px 0;
+            justify-content: center;
+        }
+    }
+    .footer-discount__bottom 
+    {
+        padding: 20px 0 13px 0;
+        border-top: 1px solid rgba(28, 41, 77, 0.15);
+        border-bottom: 1px solid rgba(28, 41, 77, 0.15);
+    }
+    .footer-discount__form 
+    {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 15px;
+        & .logo svg 
+        {
+            width: 50px;
+            height: 40px;
+        }
+    }
+
+    .footer-discount__subscribe 
+    {
+        display: flex;
+        align-items: center;
+    }
+
+    .footer-discount__subscribe-input 
+    {
+        display: none;
+        background-color: #FFF;
+        stroke-width: 1px;
+        border: rgba(40, 47, 54, 0.15);
+        border-right: none;
+        padding: 10px 15px;
+        border-radius: 0;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        height: 40px;
+        width: 220px;
+
+        &::placeholder 
+        {
+            color: rgba(40, 47, 54, 0.50);
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+        }
+
+        &--mobile { display: block;}
+    }
+
+    .footer-discount__subscribe-btn 
+    {
+        background-color: #FF5C00;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        padding: 10px 15px;
+    }
+
+    .footer__middle 
+    {
+        display: none;
+        &--mobile 
+        {
+            background-color: #fff;
+            display: block;
+        }
+    }
+
+    .footer__middle-nav--mobile {padding: 0 20px;}
+
+    .footer__middle-list--mobile 
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer__middle-item--mobile 
+    {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 0;
+        border-radius: 2px;
+        border-bottom: 1px solid rgba(42, 61, 72, 0.15);
+        &:last-child {border-bottom: none;}
+    }
+
+    .footer__middle-link--mobile 
+    {
+        color: #2A3D48;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        
+    }
+    .footer__polytic--mobile 
+    {
+        border-top: 1px solid rgba(42, 61, 72, 0.15);
+        border-bottom: 1px solid rgba(42, 61, 72, 0.15);
+    }
+
+    .footer__polytic-box--mobile 
+    {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer__polytic-link--mobile 
+    {
+        color: rgba(28, 41, 77, 0.50);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+
+    .footer__requisites-list--mobile 
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer__requisites-item--mobile 
+    {
+        padding: 20px;
+        border-bottom: 1px solid rgba(42, 61, 72, 0.15);
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .footer__requisites-link--mobile 
+    {
+        color: #1C294D;
+        font-size: 14px;
+        font-weight: 400;
+        &.address {letter-spacing: -0.2px;}
+    }
+
+    .footer__copyright--mobile 
+    {
+        color: rgba(28, 41, 77, 0.50);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        padding: 20px;
+    }
+}
+
+@media (min-width:1160px) 
+{
+    .footer-discount__messangers 
+    {
+        display: flex;
+        &--mobile {display: none;}
+    }
+
+    .footer-discount__form {justify-content: space-between;}
+    .footer-discount__bottom 
+    {
+        border: none;
+        padding: 11px 0 20px 0px;
+    }
+    .footer-discount__subscribe {margin-left: 100px;}
+    .footer-discount__subscribe-input 
+    {
+        display: block;
+        width: 393px;
+        &--mobile { display: none;}
+    }
+
+    .footer__middle 
+    {
+        display: block;
+        &--mobile {display: none;}
+    }
+
+    .footer__middle-inner 
+    {
+        padding: 45px 0;
+        display: flex;
+        gap: 30px;
+    }
+
+    .footer__box 
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        width: 165px;
+    }
+
+    .footer__box-title 
+    {
+        color: #1C294D;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+    }
+
+    .footer__box-list 
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .footer__box-link 
+    {
+        color: rgba(40, 47, 54, 0.80);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+    
+    .footer__box-link--pricelist 
+    {
+        display: flex;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .pricelist__download 
+    {
+        color: rgba(40, 47, 54, 0.80);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        white-space: nowrap;
+    }
+
+    .pricelist__size 
+    {
+        color: rgba(40, 47, 54, 0.50);
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 15px;
+    }
+
+    .footer__bottom 
+    {
+        border-top: 1px solid rgba(28, 41, 77, 0.15);
+        padding: 40px 0 45px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .footer__bottom-copyright 
+    {
+        color: rgba(28, 41, 77, 0.50);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+
+    .footer__bottom-right {display: flex;}
+
+    .footer__bottom-right__link 
+    {
+        color: rgba(28, 41, 77, 0.80);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+
+    .footer__bottom-right__link--polytic { margin: 0 30px 0 67px;}
+}

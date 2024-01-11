@@ -1,0 +1,89 @@
+@media (min-width:375px) {
+    .subscription 
+    {
+        border-radius: 5px;
+        background: #0288D1;
+        padding: 25px 10px 20px 10px;
+    }
+    .subscription__form 
+    {
+        display: flex;
+        flex-direction: column;
+        color: #fff;
+    }
+    .subscription__text 
+    {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 24px;
+        z-index: 1;
+        margin-bottom: 9px;
+        &--price 
+        {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 20px;
+            position: relative;
+            &::after 
+            {
+                content: '';
+                position: absolute;
+                top: -2px;
+                right: -8px;
+                background-image: url(../img/subscription-pseudo.png);
+                width: 65.5px;
+                height: 25.5px;
+                background-repeat: no-repeat;
+                background-position: center;
+                z-index: -1;
+            }
+        }
+    }
+    }
+    .subscription__input 
+    {
+    padding: 10px 15px;
+    border-radius: 5px;
+    max-width: 418px;
+    width: 100%;
+    border: none;
+    margin-bottom: 10px;
+    &::placeholder 
+    {
+        color: rgba(28, 41, 77, 0.50);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px
+    }
+    }
+    .subscription__btn 
+    {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    padding: 10px 25px;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid #FFF;
+    }
+    @media (min-width:1160px) 
+    {
+    .subscription { padding: 32px 45px 22px 45px;}
+    .subscription__form 
+    {
+        flex-direction: row;
+        align-items: center;
+    }
+    .subscription__input 
+    {
+        width: 418px;
+        margin-left: 14px;
+    }
+    .subscription__text 
+    {
+        white-space: nowrap;
+        br {display: none;}
+    }
+    .subscription__btn {margin: 0 0 10px 10px;}
+}

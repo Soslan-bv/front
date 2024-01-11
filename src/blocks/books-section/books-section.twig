@@ -1,0 +1,140 @@
+<section class="books-section">
+	<div class="books-section__top">
+		<h3 class="books-section__top-title">
+			{{title}}
+		</h3>
+		<div class="books-section__top-arrows">
+			<button class="books-section__top-prev">{% include "@assets/svg/books-left.svg" %}</button>
+			<button class="books-section__top-next">{% include "@assets/svg/books-right.svg" %}</button>
+		</div>
+	</div>
+	<div class="books-section__cards">
+		<div class="books-section__card">
+			<div class="books-section__card-filter">
+				{% include "@blocks/bestseller/bestseller.twig" %}
+				{% include "@blocks/one-plus/one-plus.twig" %}
+			</div>
+			<img class="books-section__card-img" src="../img/new-receipt-1.png" alt="new-receipt">
+			<div class="books-section__card-content">
+				<p class="books-section__card-category">Корпоративное право</p>
+				<p class="books-section__card-name">Инвестирование: способы, риски, субъекты : монография</p>
+				<p class="books-section__card-name books-section__card-name--mobile">Инвестирование: способы, риски, субъекты : монограф...</p>
+				<p class="books-section__card-author">Майфат А.В.</p>
+				<p class="books-section__card-price">4 450 ₽
+				</p>
+				<div class="books-section__card-rating">
+					<p class="books-section__card-rating__star">
+						{% include "@assets/svg/star-rating.svg" %}
+						4.9</p>
+					<p class="books-section__card-rating__recomendation">
+						{% include "@assets/svg/like.svg" %}
+						89% рекомендуют</p>
+				</div>
+				<div class="books-section__card-btns">
+					<button class="books-section__card-buy">
+						{% include "@assets/svg/shopping-active.svg" %}
+						В корзину
+					</button>
+					<button class="books-section__card-favorite">
+						{% include "@assets/svg/favorites.svg" %}
+					</button>
+				</div>
+			</div>
+		</div>
+		<div class="books-section__card">
+			<div class="books-section__card-filter">
+				{% include "@blocks/novelty/novelty.twig" %}
+			</div>
+			<img class="books-section__card-img" src="../img/new-receipt-2.png" alt="new-receipt">
+			<div class="books-section__card-content">
+				<p class="books-section__card-category">Договорное право</p>
+				<p class="books-section__card-name">Договор коммерческой концессии (франчайзинг). Граж...</p>
+				<p class="books-section__card-author">Багдасарян А.Ф.</p>
+				<p class="books-section__card-price">372 ₽
+				</p>
+				<div class="books-section__card-rating">
+					<p class="books-section__card-rating__star">
+						{% include "@assets/svg/star-rating.svg" %}
+						4.9</p>
+					<p class="books-section__card-rating__recomendation">
+						{% include "@assets/svg/like.svg" %}
+						89% рекомендуют</p>
+				</div>
+				<div class="books-section__card-btns">
+					<button class="books-section__card-buy">
+						{% include "@assets/svg/shopping-active.svg" %}
+						В корзину
+					</button>
+					<button class="books-section__card-favorite">
+						{% include "@assets/svg/favorites.svg" %}
+					</button>
+				</div>
+			</div>
+		</div>
+		<div class="books-section__card">
+			<img class="books-section__card-img" src="../img/new-receipt-3.png" alt="new-receipt">
+			<div class="books-section__card-content">
+				<p class="books-section__card-category">Конкурентное право</p>
+				<p class="books-section__card-name">Договор коммерческой концессии (франчайзинг). Граж...</p>
+				<p class="books-section__card-author">Башлаков-Николаев И.В.</p>
+				<p class="books-section__card-price">
+					<span class="books-section__card-price--new">984 ₽</span>
+					<span class="books-section__card-price--old">1 284 ₽</span>
+					<span class="books-section__card-price--benefit">Выгода 300 ₽</span>
+				</p>
+				<div class="books-section__card-rating">
+					<p class="books-section__card-rating__star">
+						{% include "@assets/svg/star-rating.svg" %}
+						4.9</p>
+					<p class="books-section__card-rating__recomendation">
+						{% include "@assets/svg/like.svg" %}
+						89% рекомендуют</p>
+				</div>
+				<div class="books-section__card-btns">
+					<button class="books-section__card-buy">
+						{% include "@assets/svg/shopping-active.svg" %}
+						В корзину
+					</button>
+					<button class="books-section__card-favorite">
+						{% include "@assets/svg/favorites.svg" %}
+					</button>
+				</div>
+			</div>
+		</div>
+		<div class="books-section__card">
+			<div class="books-section__card-filter">
+				{% include "@blocks/bestseller/bestseller.twig" %}
+				{% include "@blocks/one-plus/one-plus.twig" %}
+			</div>
+			<img class="books-section__card-img" src="../img/new-receipt-1.png" alt="new-receipt">
+			<div class="books-section__card-content">
+				<p class="books-section__card-category">Корпоративное право</p>
+				<p class="books-section__card-name">Инвестирование: способы, риски, субъекты : монография</p>
+				<p class="books-section__card-name books-section__card-name--mobile">Инвестирование: способы, риски, субъекты : монограф...</p>
+				<p class="books-section__card-author">Майфат А.В.</p>
+				<p class="books-section__card-price books-section__card-price">
+					<span class="books-section__card-price--second">450 ₽</span>
+					<span class="books-section__card-price--mobile">4 450 ₽</span>
+				</p>
+			</p>
+			<div class="books-section__card-rating">
+				<p class="books-section__card-rating__star">
+					{% include "@assets/svg/star-rating.svg" %}
+					4.9</p>
+				<p class="books-section__card-rating__recomendation books-section__card-rating__recomendation--mobile">
+				{% include "@assets/svg/like.svg" %}
+				89% рекомендуют</p>
+		</div>
+		<div class="books-section__card-btns">
+			<button class="books-section__card-buy">
+				{% include "@assets/svg/shopping-active.svg" %}
+				В корзину
+			</button>
+			<button class="books-section__card-favorite">
+				{% include "@assets/svg/favorites.svg" %}
+			</button>
+		</div>
+	</div>
+</div></div><div class="books-section__all">
+<a href="#" class="books-section__all-link">Показать все книги раздела</a></div><div class="books-section__all books-section__all--mobile">
+<a href="#" class="books-section__all-link">Показать все книги</a></div></section>

@@ -1,0 +1,17 @@
+{% extends "@layouts/layout.twig" %}
+
+{% block page %}
+
+	{% include "@blocks/promotion/promotion.twig" %}
+	{% include "@blocks/books-section/books-section.twig" with {'title': 'Новые поступления'} %}
+	{% include "@blocks/subscription/subscription.twig" %}
+	{% include "@blocks/books-section/books-section.twig" with {'title': 'Готовятся к выходу'} %}
+	{% include "@blocks/advantages/advantages.twig" %}
+	{% include "@blocks/news/news.twig" %}
+	{#
+			Пример подключения файла
+			{% include '@blocks/component/component.twig' %}
+			Пример подключения svg
+			{% include '@assets/svg/component.svg' %}
+		#}
+{% endblock %}

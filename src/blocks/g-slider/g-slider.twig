@@ -1,0 +1,30 @@
+<div class="g-slider">
+	<div class="g-slider__wrapper">
+		<button class="g-slider-prev" onclick="o2.slider.previousSlide(this)">
+			{% include "@assets/svg/slider-left.svg" %}
+		</button>
+		<div class="g-slider__field">
+			<div class="slide slide--1">
+				{% include "@assets/svg/slider-text--mobile.svg" %}
+			</div>
+			<div class="slide slide--2">
+				{% include "@assets/svg/slider-text--mobile.svg" %}
+			</div>
+			<div class="slide slide--3">
+				{% include "@assets/svg/slider-text--mobile.svg" %}
+			</div>
+			<div class="slide slide--4">
+				{% include "@assets/svg/slider-text--mobile.svg" %}
+			</div>
+		</div>
+		<button class="g-slider-next active" onclick="o2.slider.nextSlide(this)">
+			{% include "@assets/svg/slider-right.svg" %}
+		</button>
+		<div class="g-slider__btns">
+			<span onclick="o2.slider.dotsBtns(this)" data-slide-to='1' class="g-slider__btns-item active"></span>
+			<span onclick="o2.slider.dotsBtns(this)" data-slide-to='2' class="g-slider__btns-item"></span>
+			<span onclick="o2.slider.dotsBtns(this)" data-slide-to='3' class="g-slider__btns-item"></span>
+			<span onclick="o2.slider.dotsBtns(this)" data-slide-to='4' class="g-slider__btns-item"></span>
+		</div>
+	</div>
+</div>
